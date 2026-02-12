@@ -40,3 +40,42 @@
 .read-the-docs {
   color: #888;
 }
+.header {
+  width: 100vw;
+  background-color: rgb(152, 63, 63);
+  height: 10vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.footer {
+  width: 100vw;
+  background-color: rgb(152, 63, 63);
+  height: 8vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.main-page {
+  height: 90%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 97px;
+  /* background-color: #d2adec; */
+}
+.home-placement {
+  position: relative;
+  top:34vh;
+}
+.nav-list {
+  position: relative;
+  right: 20px;
+  top: 15px;
+}
+
+.header-heading {
+  position: relative;
+  top: 14px;
+  left: 18px;
+}
