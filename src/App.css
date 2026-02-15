@@ -78,4 +78,23 @@
   position: relative;
   top: 14px;
   left: 18px;
+  font-family: fantasy;
+}
+.mostImp {
+  position: relative;
+  top:7vw;
+}
+.mostImpTextField {
+  background-color: white;
+  border-radius: 5px;
+  height: 33px;
+  width: 12vw;
+  padding: 5px;
+}
+.mostImpImage {
+  width:11vw;
+}
+.mostImpBtns {
+  background-color: rgb(199, 127, 199);
+  width:5vw;
 }

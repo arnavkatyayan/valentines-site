@@ -3,9 +3,14 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import HomePage from './HomePage'
+import MostImportant from './MostImportant'
 function App() {
   const [activeTab, setActiveTab] = useState("home");
 
+
+  const handleTabChange = (inp) => {
+    setActiveTab(inp);
+  }
   return (
     <>
     <div className='header'>
@@ -16,16 +21,19 @@ function App() {
           </h1>
 
           <ul className="flex gap-6 text-purple-300 font-semibold nav-list">
-            <li className="cursor-pointer hover:text-white transition">
+            <li className="cursor-pointer hover:text-white transition" onClick={()=>handleTabChange("firstMeeting")}>
               First Meeting 💜
             </li>
-            <li className="cursor-pointer hover:text-white transition">
-              Why I Love You 💜
+            <li className="cursor-pointer hover:text-white transition" onClick={()=>handleTabChange("whyILoveYou")}>
+              Why I Love You ?  💜
             </li>
-            <li className="cursor-pointer hover:text-white transition">
+            <li className="cursor-pointer hover:text-white transition" onClick={()=>handleTabChange("futurePlans")}>
               Future Plans 💜
             </li>
-            <li className="cursor-pointer hover:text-white transition">
+            <li className="cursor-pointer hover:text-white transition" onClick={()=> handleTabChange("memories")}>
+              Memories 💜
+            </li>
+            <li className="cursor-pointer hover:text-white transition" onClick={()=> handleTabChange("mostImportant")}>
               Most Important 💜
             </li>
           </ul>
@@ -33,11 +41,15 @@ function App() {
         </nav>
     </div>
     <div className='main-page bg-purple-300'>
-    <HomePage/>
+    {activeTab === "home" && <HomePage/>}
+    {activeTab === "mostImportant" && <MostImportant/>}
+    {/* {activeTab==="mostImportant" && } */}
     </div>
     <div className='footer'>
-      <div>
-      <p className="text-purple-300 font-semibold">© 2025 Arnav Katyayan. All rights reserved.</p>
+      <div className='flex flex-col'>
+      <p className="text-purple-300 font-extrabold py-2">Version : 1.0.0</p>
+
+      <p className="text-purple-300 font-semibold">© 2026 Arnav Katyayan. All rights reserved.</p>
     </div>
     </div>
     </>
