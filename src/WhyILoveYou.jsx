@@ -58,7 +58,7 @@ function WhyILoveYou() {
                     <div key={index} className="bg-white p-4 rounded-lg shadow-md cursor-pointer hover-effect"> 
                         <div className="text-4xl mb-2">{item.emoji}</div>
                         <h3 className="text-xl font-semibold text-purple-700 title-animation">{item.title}</h3>
-                        <p className="text-gray-600 text-animation">{item.text}</p>
+                        <p className="text-gray-600 text-animation-component">{item.text}</p>
                     </div>
                 ))}
             </div>

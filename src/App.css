@@ -200,6 +200,6 @@
     opacity: 1;
   }
 }
-.text-animation {
+.text-animation-component {
   animation:opa 10s ease-in-out;
 }
