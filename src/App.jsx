@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import HomePage from './HomePage'
 import MostImportant from './MostImportant'
+import FirstMeeting from './FirstMeeting';
 function App() {
   const [activeTab, setActiveTab] = useState("home");
 
@@ -13,47 +14,68 @@ function App() {
   }
   return (
     <>
-    <div className='header'>
+      <div className='header'>
         <nav className="flex justify-between items-center">
-
-          <h1 className="text-xl font-bold text-purple-300 header-heading">
-            I Love You Tanya Kumar Multani 💜
-          </h1>
+        
+      
+            <h1 className="text-xl font-bold text-purple-300 header-heading">
+              I Love You Tanya Kumar Multani 💜
+            </h1>
+         
 
           <ul className="flex gap-6 text-purple-300 font-semibold nav-list">
-            <li className="cursor-pointer hover:text-white transition" onClick={()=>handleTabChange("firstMeeting")}>
+            <li
+              className={`cursor-pointer transition 
+      ${activeTab === "firstMeeting" ? "text-white" : "hover:text-white"}`}
+              onClick={() => handleTabChange("firstMeeting")}
+            >
               First Meeting 💜
             </li>
-            <li className="cursor-pointer hover:text-white transition" onClick={()=>handleTabChange("whyILoveYou")}>
-              Why I Love You ?  💜
+
+            <li
+              className={`cursor-pointer transition 
+      ${activeTab === "whyILoveYou" ? "text-white" : "hover:text-white"}`}
+              onClick={() => handleTabChange("whyILoveYou")}
+            >
+              Why I Love You ? 💜
             </li>
-            <li className="cursor-pointer hover:text-white transition" onClick={()=>handleTabChange("futurePlans")}>
-              Future Plans 💜
-            </li>
-            <li className="cursor-pointer hover:text-white transition" onClick={()=> handleTabChange("memories")}>
+
+
+            <li
+              className={`cursor-pointer transition 
+      ${activeTab === "memories" ? "text-white" : "hover:text-white"}`}
+              onClick={() => handleTabChange("memories")}
+            >
               Memories 💜
             </li>
-            <li className="cursor-pointer hover:text-white transition" onClick={()=> handleTabChange("mostImportant")}>
+
+            <li
+              className={`cursor-pointer transition 
+      ${activeTab === "mostImportant" ? "text-white" : "hover:text-white"}`}
+              onClick={() => handleTabChange("mostImportant")}
+            >
               Most Important 💜
             </li>
           </ul>
 
-        </nav>
-    </div>
-    <div className='main-page bg-purple-300'>
-    {activeTab === "home" && <HomePage/>}
-    {activeTab === "mostImportant" && <MostImportant/>}
-    {/* {activeTab==="mostImportant" && } */}
-    </div>
-    <div className='footer'>
-      <div className='flex flex-col'>
-      <p className="text-purple-300 font-extrabold py-2">Version : 1.0.0</p>
 
-      <p className="text-purple-300 font-semibold">© 2026 Arnav Katyayan. All rights reserved.</p>
-    </div>
-    </div>
+        </nav>
+      </div>
+      <div className='main-page bg-purple-300'>
+        {activeTab === "home" && <HomePage />}
+        {activeTab === "mostImportant" && <MostImportant />}
+        {activeTab === "firstMeeting" && <FirstMeeting />}
+
+      </div>
+      <div className='footer'>
+        <div className='flex flex-col'>
+          <p className="text-purple-300 font-extrabold py-2">Version : 1.0.0</p>
+
+          <p className="text-purple-300 font-semibold">© 2026 Arnav Katyayan. All rights reserved.</p>
+        </div>
+      </div>
     </>
-  
+
   );
 }
 
