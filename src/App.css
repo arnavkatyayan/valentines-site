@@ -103,6 +103,8 @@
 }
 .first-meeting-imgs {
   height:26vh;
+  animation: opa 5s ease-in-out;
+  border-radius: 10px;
 }
 .first-meeting-desc {
   height: 77vh;
@@ -121,11 +123,47 @@
 }
 .first-meeting-img2 {
   height:50vh;
+  animation: opa 5s ease-in-out;
+  border-radius: 10px;
 }
 .first-meeting-desc p {
   margin-top: 20px;
   font-family: monospace;
   font-size: 15px;
   line-height: 2.6;
+  animation: fadeSlide 5s ease-in-out;
+  font-weight: 600;
 }
-/* @keyframes  */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+    font-weight: 300;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    font-weight: 600;
+  }
+}
+@keyframes opa {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.text-animation {
+  transition: transform 0.3s ease;
+}
+
+.text-animation:hover {
+  transform: translateZ(20px) scale(1.1);
+}

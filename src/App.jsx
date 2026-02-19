@@ -16,17 +16,15 @@ function App() {
     <>
       <div className='header'>
         <nav className="flex justify-between items-center">
-        
-      
-            <h1 className="text-xl font-bold text-purple-300 header-heading">
-              I Love You Tanya Kumar Multani 💜
-            </h1>
-         
+          <h1 className="text-xl font-bold text-purple-300 header-heading cursor-pointer" onClick={()=>handleTabChange("home")}>
+            I Love You Tanya Kumar Multani 💜
+          </h1>
+
 
           <ul className="flex gap-6 text-purple-300 font-semibold nav-list">
             <li
               className={`cursor-pointer transition 
-      ${activeTab === "firstMeeting" ? "text-white" : "hover:text-white"}`}
+      ${activeTab === "firstMeeting" ? "text-white text-animation" : "hover:text-white"}`}
               onClick={() => handleTabChange("firstMeeting")}
             >
               First Meeting 💜
@@ -34,7 +32,7 @@ function App() {
 
             <li
               className={`cursor-pointer transition 
-      ${activeTab === "whyILoveYou" ? "text-white" : "hover:text-white"}`}
+      ${activeTab === "whyILoveYou" ? "text-white text-animation" : "hover:text-white"}`}
               onClick={() => handleTabChange("whyILoveYou")}
             >
               Why I Love You ? 💜
@@ -43,7 +41,7 @@ function App() {
 
             <li
               className={`cursor-pointer transition 
-      ${activeTab === "memories" ? "text-white" : "hover:text-white"}`}
+      ${activeTab === "memories" ? "text-white text-animation" : "hover:text-white"}`}
               onClick={() => handleTabChange("memories")}
             >
               Memories 💜
@@ -51,7 +49,7 @@ function App() {
 
             <li
               className={`cursor-pointer transition 
-      ${activeTab === "mostImportant" ? "text-white" : "hover:text-white"}`}
+      ${activeTab === "mostImportant" ? "text-white text-animation" : "hover:text-white"}`}
               onClick={() => handleTabChange("mostImportant")}
             >
               Most Important 💜
