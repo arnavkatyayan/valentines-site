@@ -5,6 +5,7 @@ import './App.css'
 import HomePage from './HomePage'
 import MostImportant from './MostImportant'
 import FirstMeeting from './FirstMeeting';
+import WhyILoveYou from './WhyILoveYou';
 function App() {
   const [activeTab, setActiveTab] = useState("home");
 
@@ -63,6 +64,7 @@ function App() {
         {activeTab === "home" && <HomePage />}
         {activeTab === "mostImportant" && <MostImportant />}
         {activeTab === "firstMeeting" && <FirstMeeting />}
+        {activeTab === "whyILoveYou" && <WhyILoveYou />}
 
       </div>
       <div className='footer'>
