@@ -36,7 +36,7 @@ function MostImportant() {
                 value={password}
                 onChange={handlePassword}
                 className='mostImpTextField'
-                placeholder='Enter the password here my love'
+                placeholder='Password my love 💜'
             />
 
             <p className='text-red-500'>
