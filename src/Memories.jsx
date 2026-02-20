@@ -130,7 +130,7 @@ function Memories() {
             )}
             <h2 className='memories-content'>{arrayOfMemories[imageIndex].content}</h2>
             <div className='flex gap-2.5 items-center justify-center'>
-              <Button onClick={()=>handlePrevious()} className='mostImpBtns'>Previous</Button>
+              <Button onClick={()=>handlePrevious()} className='mostImpBtns'>Prev</Button>
               <Button onClick={()=>handleNext()} className='mostImpBtns'>Next</Button>
             </div>
              </div>

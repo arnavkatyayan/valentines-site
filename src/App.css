@@ -63,15 +63,14 @@
   background-position: center;
 }
 .main-page {
-  height: 90%;
+  height: 88%;
   width: 100%;
   position: absolute;
   left: 0;
-  top: 97px;
-  background-image: url("./assets/lavenderBg.png");
+  top: 81px;
+  background-image: url(/src/assets/lavenderBg.png);
   background-size: cover;
   background-position: center;
-  /* background-color: #d2adec; */
 }
 .home-placement {
   position: relative;
