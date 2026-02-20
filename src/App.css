@@ -141,6 +141,7 @@
   line-height: 2.6;
   animation: fadeSlide 5s ease-in-out;
   font-weight: 600;
+  color: darkorchid
 }
 @keyframes fadeSlide {
   from {
@@ -177,7 +178,7 @@
 }
 .adjusting-whyILoveYou-dimensions {
   position: relative;
-  top: 10vh;
+  top: 6vh;
 }
 .hover-effect:hover {
   background-color: rgb(216, 180, 254)
