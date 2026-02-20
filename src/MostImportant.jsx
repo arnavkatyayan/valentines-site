@@ -19,7 +19,7 @@ function MostImportant() {
     }
 
     useEffect(()=> {
-        if(password.trim().toLowerCase()=== "baby") {
+        if(password.trim().toLowerCase()=== "poha") {
             setShowProposal(true);
         }
     },[password]);
@@ -40,7 +40,7 @@ function MostImportant() {
             />
 
             <p className='text-red-500'>
-                💡 Hint! A 4 letter word that you find cheesy 😝 and I love calling you 💕
+                💡 Hint! A 4 letter word regarding food that you hate the most.
             </p>
             </> :
             <div className='flex flex-col gap-4'> 
