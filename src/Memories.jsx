@@ -17,6 +17,7 @@ import memoriesImg15 from './assets/memoriesImg15.jpeg';
 import memoriesImg16 from './assets/memoriesImg16.jpeg';
 import memoriesImg17 from './assets/memories17.mp4';
 import memoriesImg18 from './assets/memories18.mp4';
+import memoriesImg19 from './assets/memories19.mp4';
 import {Button} from "react-bootstrap";
 import {useState} from "react";
 function Memories() {
@@ -108,10 +109,16 @@ function Memories() {
     video: memoriesImg17
   },
   {
-    content: "Random lazy day, but I am happy to be with you 🥹",
+    content: "Random lazy day at bookstore 🥹",
     photo: null,
     video: memoriesImg18
-  }
+  },
+  {
+    content: "My fav thing is to record videos of us together, and this is one of those moments 🥹",
+    photo: null,
+    video: memoriesImg19
+  },
+    
 ];
         
     const handlePrevious = () => {
