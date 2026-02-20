@@ -6,6 +6,7 @@ import HomePage from './HomePage'
 import MostImportant from './MostImportant'
 import FirstMeeting from './FirstMeeting';
 import WhyILoveYou from './WhyILoveYou';
+import Memories from './Memories';
 function App() {
   const [activeTab, setActiveTab] = useState("home");
 
@@ -65,7 +66,7 @@ function App() {
         {activeTab === "mostImportant" && <MostImportant />}
         {activeTab === "firstMeeting" && <FirstMeeting />}
         {activeTab === "whyILoveYou" && <WhyILoveYou />}
-
+        {activeTab === "memories" && <Memories />}
       </div>
       <div className='footer'>
         <div className='flex flex-col'>

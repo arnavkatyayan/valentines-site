@@ -203,3 +203,46 @@
 .text-animation-component {
   animation:opa 10s ease-in-out;
 }
+.memories-page {
+  position: relative;
+  top:4vh;
+}
+.memories-btns {
+  display: flex;
+  gap:10px;
+}
+.memories-img {
+  height:50vh;
+  border-radius: 10px;;
+}
+.memories-content {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: brown;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+
+  /* soft shadow for depth */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+
+  /* smooth animation */
+  animation: fadeUp 0.8s ease-in-out;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.memories-heading {
+  color:darkorchid;
+  font-weight: 700;
+}
